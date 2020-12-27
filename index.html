@@ -1,35 +1,91 @@
-<!DOCTYPE html>
-<!-- code by webdevtrick (https://webdevtrick.com) -->
-<html>
-<head lang="en">
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
-    <title>Quiz</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn to become a System Admin</title>
+    <link rel="stylesheet" type="text/css" href="layouts/blog/styles.css" />    
 </head>
+
 <body>
-    <div class="grid">
-        <div id="quiz">
-            <h1>Quiz in JavaScript  Webdevtrick.com</h1>
-            <hr style="margin-bottom: 20px">
-
-            <p id="question"></p>
-
-            <div class="buttons">
-                <button id="btn0"><span id="choice0"></span></button>
-                <button id="btn1"><span id="choice1"></span></button>
-                <button id="btn2"><span id="choice2"></span></button>
-                <button id="btn3"><span id="choice3"></span></button>
-            </div>
-
-            <hr style="margin-top: 50px">
-            <footer>
-                <p id="progress">Question x of y</p>
-            </footer>
+    <div class=main>
+        <div class="header">
+            <h1>Devops</h1>
         </div>
+
+        <div class="topnav">
+            <a href="#">Scripttings</a>
+            <a href="#">Python</a>
+            <a href="#">English</a>
+            <a href="#" style="float:right">CKA</a>
+        </div>
+
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>Rsync</h2>
+                    <h5>Dec 19, 2020</h5>
+                    <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+                    <img class="image-content" src="images/rsync-1.png"  alt="Rsync commands">
+                    <p>If SSH on the remote host is listening on a port other than the default 22, specify the port using
+                        the -e option. For example, if SSH is listening on port 3322 you would use:
+                        <code
+                            id=line-commands>rsync -a -e "ssh -p 3322" /home/linuxize/images/ user@12.12.12.12:/var/www/images/</code>
+                    </p>
+                    <p>How to rsync file via multihost (ssh Jump):</p>
+                    <code id=line-commands>rsync -azv -e 'ssh -A -J USER@PROXYHOST:PORT' foo/ dest:./foo/</code>
+                </div>
+                <div class="card">
+                    <h2>Useful commands in Kubernetes</h2>
+                    <h5>Dec 26, 2020</h5>
+                    <img class="image-content" src="images/kubernetes.png"  alt="Rsync commands">
+                    <!-- <p>Some text..</p> -->
+                    <p>
+                        <code id=line-commands>docker run -p 3000:3000 -t &#60;image_id&#62;</code>
+                    </p>
+                    <p>
+                        <code id=line-commands>kubectl port-forward &#60;name_pod&#62; 8081:3000</code>
+                    </p>
+                    <p>
+                        <code id=line-commands>kubectl expose pod &#60;name_pod&#62; --type=NodePort --name &#60;service&#62;</code>
+                    </p>
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>About Me</h2>
+                    <div class="fakeimg" style="height:100px;">Image</div>
+                    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                </div>
+                <div class="card">
+                    <h3>Popular Post</h3>
+                    <div class="fakeimg">
+                        <p>Image</p>
+                    </div>
+                    <div class="fakeimg">
+                        <p>Image</p>
+                    </div>
+                    <div class="fakeimg">
+                        <p>Image</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Follow Me</h3>
+                    <p>Some text..</p>
+                </div>
+            </div>
+        </div>
+<!-- 
+        <div class="footer">
+            <h2>Footer</h2>
+        </div> -->
+
+        <div class=Navigation></div>
+        <div class=Introdution></div>
+        <div class=Contents></div>
+        <div class=Sidebar></div>
+        <div class=Footer></div>
     </div>
-
-
-<script src="question.js"></script>
-
 </body>
+
 </html>
